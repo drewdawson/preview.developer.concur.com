@@ -7,19 +7,20 @@ redirect_from:
 
 # API Lifecycle & Deprecation Policy
 
-The API Lifecycle & Deprecation Policy is part of our [API terms and conditions of use.](/Terms-of-Use.html) We may make periodic updates to this policy, at which time we will notify those who have agreements with us.
+The API Lifecycle & Deprecation Policy is part of our [API terms and conditions of use](/terms-of-use-2021.html). We may make periodic updates to this policy, at which time we will notify in [Release Notes](/release-notes/).
 
 ## API Version Status  
 
-* **Active:** An active API version is the most current and fully supported API. It is the recommended version for everyone to use.
-* **Deprecated:** A deprecated API version has been superseded by a newer API version.  New apps will be denied access to deprecated APIs.
-* **Decommissioned:** A decommissioned API version is no longer available on production.
+* **Beta:** A version of an API that is not meant for productive use. Beta APIs may be changed or deleted at our discretion.
+* **Active:** A version of an API that is meant for productive use.
+* **Deprecated:** A version of an API that supports productive use but is destined to be Decommissioned. In cases where an Active version of the API exists, it is advisable to migrate to the Active version, however, an Active version may not exist in all cases. New apps may be denied access to deprecated APIs.
+* **Decommissioned:** A version of an API that is no longer meant for productive use and is no longer supported by SAP. APIs in this status may be deleted or have access removed at any time.
 
 ## API Lifespan and State Change
 
-* **Minimum Lifespan:** We will provide a minimum lifespan for APIs of 24 months in the active or deprecated status before announcing a decommissioned state.
+* **Minimum Lifespan:** We will provide a minimum lifespan for non-Beta APIs of 24 months in Active or Deprecated states before announcing a Decommissioned state. For example, the minimum API lifespan ‘M’ for an API after it is published in Active version V1 is 24 months, where M is defined as the combined periods in Active and Deprecated states.
 *	**Deprecated -> Decommissioned:** Once an API transitions from an active to deprecated status, we will maintain the API in the deprecated state for a minimum of 12 months before transitioning the API to decommissioned state.
-*	**Decommissioned:** Decommissioned APIs are no longer supported and any and all documentation may be deleted at our discretion.  
+*	**Decommissioned:** Decommissioned APIs are no longer supported and documentation may be deleted at our discretion. 
 *	**Exceptions:** There may be exceptions where we are not able to satisfy the foregoing minimum lifespan or minimum deprecated state duration. This is including but not limited to:
     * Where required by law or regulatory authority.
     * Where required by a third party licensor.
@@ -30,9 +31,9 @@ The API Lifecycle & Deprecation Policy is part of our [API terms and conditions 
 
 ## API Version Status Table
 
-Active|Deprecated|Decommissioned
----|---|---
-**API is live in production.**| **API is live in production.** | API is no longer available in production.
-**Documentation:** Posted on day of launch, may be available for review earlier. | **Documentation:** Deprecated status indicated and posted on day of deprecation. | **Documentation:** N/A
-**Support:** Updated with bug fixes and new features are available. | **Support:** Updated with bug fixes for a minimum of 12 months. | **Support:** None.
-**Release Notes:** Announce availability when in production.| **Release Notes:** Announce when deprecated. Time period is at least 12 months in this status. | **Release Notes:** Notify 30 days prior to decommissioning.
+Beta|Active|Deprecated|Decommissioned
+---|---|---|---
+**API is live in production but subject to change or deletion at any time.**| **API is live in production.**| **API is live in production.** | API is no longer available in production.
+**Documentation:** May not be available or maybe restricted to select clients/partners.| **Documentation:** Posted on day of launch, may be available for review earlier. | **Documentation:** Deprecated status indicated and posted on day of deprecation. | **Documentation:** N/A
+**Support:** None.| **Support:** Updated with bug fixes and new features are available. | **Support:** Updated with bug fixes for a minimum of 12 months. | **Support:** None.
+**Release Notes:** May or may not be published.| **Release Notes:** Announce availability when in production.| **Release Notes:** Announce when deprecated. Time period is at least 12 months in this status. | **Release Notes:** Notify 30 days prior to decommissioning.
